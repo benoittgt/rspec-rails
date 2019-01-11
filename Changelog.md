@@ -9,6 +9,13 @@ Bug Fixes:
 * Further truncate system test filenames to handle cases when extra words are
   prepended. (Takumi Kaji, #2058)
 
+Enhancements
+
+* Use `__dir__` instead of `__FILE__` in generated `rails_helper.rb` where
+  supported. (OKURA Masafumi, #2048)
+* Add `have_enqueued` matcher as a "super" matcher to the `ActiveJob` matchers
+  making it easier to match on `ActiveJob` delivered emails (Joel Lubrano, #2047)
+
 ### 3.8.1 / 2018-10-23
 [Full Changelog](http://github.com/rspec/rspec-rails/compare/v3.8.0...v3.8.1)
 
